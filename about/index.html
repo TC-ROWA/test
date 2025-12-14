@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+
+    <!-- Primary Meta Tags -->
+    <title>TC ROWA</title> | About Me</title>
+    <meta
+      name="Keywords"
+      content="TC ROWA, Frontend Engineer, Technical Writer, Code, Communication, Web Development, User Experience, UI/UX Design, Portfolio, Front-End Developer, Developer, UI Engineer,INDIA"
+    />
+    <meta
+      name="description"
+      content=" TC ROWA is a skilled Frontend DEVELOPER with experience in crafting elegant and efficient code, and communicating technical solutions to a diverse audience."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tcrowa.online" />
+    <meta
+      property="og:title"
+      content="tc rowa | Frontend DEVELOPER"
+    />
+    <meta
+      property="og:description"
+      content=" TC ROWA is a skilled Frontend Engineer and Technical Writer with experience in crafting elegant and efficient code, and communicating technical solutions to a diverse audience."
+    />
+    <meta property="og:image" content="/assets/img/seo-img.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tcrowa.online/" />
+    <meta
+      property="twitter:title"
+      content="TC ROWA | Frontend DEVELOPER "
+    />
+    <meta
+      property="twitter:description"
+      content=" TC ROWA is a skilled Frontend DEVELOPER with experience in crafting elegant and efficient code, and communicating technical solutions to a diverse audience."
+    />
+    <meta property="twitter:image" content="/assets/img/seo-img.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/kse0maf.css" />
+  </head>
+
+  <body>
+    <div class="cursor-effect"></div>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/favicon.svg" alt="" />
+    </a>
+
+    <section class="more-about">
+      <div class="container">
+        <div class="section-title">
+          <h2>TC <span>ROWA </span>😎</h2>
+        </div>
+        <div class="more-about-content">
+          <div class="more-about-img">
+            <img src="../assets/img/IMG_20210217_173633899-min.jpg" alt="" />
+          </div>
+          <div class="more-about-text">
+            <p
+              >Frontend Web Developer based in India focused on designing
+              engaging UI, building interactive experiences & bringing products
+              to life through design and technology.</p
+            >
+            <br />
+            <p>
+              I have always supported the idea of a minimalistic and
+              user-focused approach to design and development, which I imbibe
+              when designing and building fully responsive web applications.</p
+            >
+            <br />
+            <p
+              >In my spare time, I love to
+              <a
+                href="https://www.youtube.com/watch?v=yUu26tcUri0&ab_channel=SonotekMusic"
+                target="_blank
+              "
+                >listen to</a
+              >
+              and
+               go on
+              long walks with friends, taking
+              <a href="https://www.instagram.com/tc_rowa_/" target="_blank"
+                > pictures</a
+              >.</p
+            >
+
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS/SASS</div>
+              <div class="skill-item">ReactJS</div>
+              <div class="skill-item">NextJS</div>
+              <div class="skill-item">Javascript</div>
+              
+              <div class="skill-item">TailwindCSS</div>
+             
+              
+              <div class="skill-item">MaterialUI</div>
+              
+              <div class="skill-item">styled-components</div>
+             
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Git/Github</div>
+             
+            </div>
+
+            <div class="tabs">
+              <button
+                type="button"
+                class="tab-item active"
+          ></button>
+              <button type="button" class="tab-item" data-target="#education"
+                >Education</button
+              >
+            </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Education -->
+            <div class="tab-content" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                 
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="about-cta">
+              <a
+                
+                
+                
+              >
+              <span>—</span>
+              <a href="../index.html#contact" class="exp-cta">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+      const tabsContainer = document.querySelector(".tabs"),
+        moreAboutSection = document.querySelector(".more-about");
+
+      ////Select Tabs
+      tabsContainer.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("tab-item") &&
+          !e.target.classList.contains("active")
+        ) {
+          tabsContainer.querySelector(".active").classList.remove("active");
+          e.target.classList.add("active");
+          const target = e.target.getAttribute("data-target");
+          moreAboutSection
+            .querySelector(".tab-content.active")
+            .classList.remove("active");
+          moreAboutSection.querySelector(target).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
